@@ -1,0 +1,64 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background: #f9f3f4 url('https://cdn.stackoverflow.co/images/jo7n4k8s/production/85605f786761be4220ebb2ffcc7375a10145ef20-1600x1200.png?rect=0,180,1600,840&w=1200&h=630&auto=format&dpr=2') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 80%;
+}
+
+h1 {
+  font-family: 'Bubble', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: neonGreen;
+  animation: glitch 1s infinite;
+}
+
+h2 {
+  font-size: 1rem; /* Adjusted font size */
+  margin-bottom: 40px;
+  color: #ff007f;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px 20px;
+  max-width: 80%;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0 0 #0f0, 0 0 #0f0, 0 0 #0f0; /* Green color for glitch effect */
+  }
+  20% {
+    text-shadow: 0.05em 0 0 #0f0, 0.1em 0 0 #0f0, 0.15em 0 0 #0f0; /* Slightly displaced green shadows */
+  }
+  40% {
+    text-shadow: -0.05em 0 0 #0f0, -0.1em 0 0 #0f0, -0.15em 0 0 #0f0; /* Reversed slightly displaced green shadows */
+  }
+  60% {
+    text-shadow: 0.05em 0 0 #0f0, 0.1em 0 0 #0f0, 0.15em 0 0 #0f0; /* Slightly displaced green shadows */
+  }
+  80% {
+    text-shadow: -0.05em 0 0 #0f0, -0.1em 0 0 #0f0, -0.15em 0 0 #0f0; /* Reversed slightly displaced green shadows */
+  }
+  100% {
+    text-shadow: 0 0 #0f0, 0 0 #0f0, 0 0 #0f0; /* Green color for glitch effect */
+  }
+}
+
+canvas {
+  border: 4px solid #ff007f;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.4);
+}
